@@ -1,4 +1,4 @@
 CompProg
 ========
 
-Componentoe Programirovanie 2012
+Componentoe Programmirovanie 2012
