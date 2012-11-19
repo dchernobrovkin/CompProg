@@ -3,12 +3,68 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Defence Of the Percents 3" Height="453" Width="651" Loaded="Window_Loaded">
     <Grid>
-        <TextBox Height="172" HorizontalAlignment="Left" Margin="153,35,0,0" Name="textBox1" VerticalAlignment="Top" Width="328" TextChanged="textBox1_TextChanged" />
-        <Label Content="Second Unit stats" Height="28" HorizontalAlignment="Left" Margin="487,49,0,0" Name="label1" VerticalAlignment="Top" />
-        <Label Content="First Content" Height="28" HorizontalAlignment="Left" Margin="25,49,0,0" Name="label2" VerticalAlignment="Top" />
-        <ComboBox Height="23" HorizontalAlignment="Left" Margin="497,235,0,0" Name="comboBox1" VerticalAlignment="Top" Width="120" />
+        <TextBox Height="172" HorizontalAlignment="Left" Margin="153,35,0,0" Name="textBox1" VerticalAlignment="Top" Width="328" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="497,246,0,0" Name="comboBox1" VerticalAlignment="Top" Width="120" />
         <ComboBox Height="23" HorizontalAlignment="Left" Margin="25,235,0,0" Name="comboBox2" VerticalAlignment="Top" Width="120" />
-        <Button Content="Fight!" Height="61" HorizontalAlignment="Left" Margin="202,225,0,0" Name="button1" VerticalAlignment="Top" Width="226" FontSize="30" FontFamily="Symbol" FontWeight="Bold" Foreground="Black" Click="button1_Click" />
+        <Button Content="Fight!" Height="61" HorizontalAlignment="Left" Margin="202,225,0,0" Name="button1" VerticalAlignment="Top" Width="226" FontSize="30" FontFamily="Symbol" FontWeight="Bold" Foreground="Black" />
         <Button Content="Create" Height="35" HorizontalAlignment="Left" Margin="48,328,0,0" Name="button2" VerticalAlignment="Top" Width="78" />
+        <Grid HorizontalAlignment="Left" Height="172" Margin="497,35,0,0" VerticalAlignment="Top" Width="120">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label Content="Name:"  HorizontalAlignment="Right" Margin="0,0,0,0" x:Name="lblNameTextRhs" Grid.ColumnSpan="1" Grid.Column="0" Grid.Row="0"/>
+            <Label Content="" Margin="0,0,0,0" RenderTransformOrigin="0.0,-0.0" Grid.ColumnSpan="1"  Width="60" Grid.Column="1" x:Name="lblNameValueRhs" Grid.Row="0"/>
+            <Label Content="AT:"  HorizontalAlignment="Right" Margin="0,0,0,0" x:Name="lblAttackTextRhs" Grid.ColumnSpan="1" Grid.Column="0" Grid.Row="1"/>
+            <Label Content="0" Margin="0,0,0,0" RenderTransformOrigin="0.0,-0.0" Grid.ColumnSpan="1"  Width="60" Grid.Column="1" x:Name="lblAttackValueRhs" Grid.Row="1"/>
+            <Label Content="EN:"  HorizontalAlignment="Right" Margin="0,0,0,0" x:Name="lblEnduraceTextRhs" Grid.ColumnSpan="1" Grid.Column="0" Grid.Row="2"/>
+            <Label Content="0" Margin="0,0,0,0" RenderTransformOrigin="0.0,-0.0" Grid.ColumnSpan="1"  Width="60" Grid.Column="1" x:Name="lblEnduraceValueRhs" Grid.Row="2"/>
+            <Label Content="CON:"  HorizontalAlignment="Right" Margin="0,0,0,0" x:Name="lblConstitutionTextRhs" Grid.ColumnSpan="1" Grid.Column="0" Grid.Row="3"/>
+            <Label Content="0" Margin="0,0,0,0" RenderTransformOrigin="0.0,-0.0" Grid.ColumnSpan="1"  Width="60" Grid.Column="1" x:Name="lblConstitutionValueRhs" Grid.Row="3"/>
+            <Label Content="DX:"  HorizontalAlignment="Right" Margin="0,0,0,0" x:Name="lblDexterityTextRhs" Grid.ColumnSpan="1" Grid.Column="0" Grid.Row="4"/>
+            <Label Content="0" Margin="0,0,0,0" RenderTransformOrigin="0.0,-0.0" Grid.ColumnSpan="1"  Width="60" Grid.Column="1" x:Name="lblDexterityValueRhs" Grid.Row="4"/>
+            <Label Content="HP:"  HorizontalAlignment="Right" Margin="0,0,0,0" x:Name="lblHealthPointsTextRhs" Grid.ColumnSpan="1" Grid.Column="0" Grid.Row="5"/>
+            <Label Content="0" Margin="0,0,0,0" RenderTransformOrigin="0.0,-0.0" Grid.ColumnSpan="1"  Width="60" Grid.Column="1" x:Name="lblHealthPointsValueRhs" Grid.Row="5"/>
+            <Label Content="Level:"  HorizontalAlignment="Right" Margin="0,0,0,0" x:Name="lblLevelPointsTextRhs" Grid.ColumnSpan="1" Grid.Column="0" Grid.Row="6"/>
+            <Label Content="0" Margin="0,0,0,0" RenderTransformOrigin="0.0,-0.0" Grid.ColumnSpan="1"  Width="60" Grid.Column="1" x:Name="lblLevelPointsValueRhs" Grid.Row="6"/>
+        </Grid>
+         <Grid HorizontalAlignment="Left" Height="172" Margin="25,35,0,0" VerticalAlignment="Top" Width="120">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label Content="Name:" Margin="16,0,0,0" x:Name="lblNameTextLhs" Grid.ColumnSpan="1" Grid.Column="0" Grid.Row="0"/>
+            <Label Content="" Margin="0,0,0,0" RenderTransformOrigin="0.0,-0.0" Grid.ColumnSpan="1"  Width="60" Grid.Column="1" x:Name="lblNameValueLhs" Grid.Row="0"/>
+            <Label Content="AT:"  HorizontalAlignment="Right" Margin="0,0,0,0" x:Name="lblAttackTextLhs" Grid.ColumnSpan="1" Grid.Column="0" Grid.Row="1"/>
+            <Label Content="0" Margin="0,0,0,0" RenderTransformOrigin="0.0,-0.0" Grid.ColumnSpan="1"  Width="60" Grid.Column="1" x:Name="lblAttackValueLhs" Grid.Row="1"/>
+            <Label Content="EN:"  HorizontalAlignment="Right" Margin="0,0,0,0" x:Name="lblEnduraceTextLhs" Grid.ColumnSpan="1" Grid.Column="0" Grid.Row="2"/>
+            <Label Content="0" Margin="0,0,0,0" RenderTransformOrigin="0.0,-0.0" Grid.ColumnSpan="1"  Width="60" Grid.Column="1" x:Name="lblEnduraceValueLhs" Grid.Row="2"/>
+            <Label Content="CON:"  HorizontalAlignment="Right" Margin="0,0,0,0" x:Name="lblConstitutionTextLhs" Grid.ColumnSpan="1" Grid.Column="0" Grid.Row="3"/>
+            <Label Content="0" Margin="0,0,0,0" RenderTransformOrigin="0.0,-0.0" Grid.ColumnSpan="1"  Width="60" Grid.Column="1" x:Name="lblConstitutionValueLhs" Grid.Row="3"/>
+            <Label Content="DX:"  HorizontalAlignment="Right" Margin="0,0,0,0" x:Name="lblDexterityTextLhs" Grid.ColumnSpan="1" Grid.Column="0" Grid.Row="4"/>
+            <Label Content="0" Margin="0,0,0,0" RenderTransformOrigin="0.0,-0.0" Grid.ColumnSpan="1"  Width="60" Grid.Column="1" x:Name="lblDexterityValueLhs" Grid.Row="4"/>
+            <Label Content="HP:"  HorizontalAlignment="Right" Margin="0,0,0,0" x:Name="lblHealthPointsTextLhs" Grid.ColumnSpan="1" Grid.Column="0" Grid.Row="5"/>
+            <Label Content="0" Margin="0,0,0,0" RenderTransformOrigin="0.0,-0.0" Grid.ColumnSpan="1"  Width="60" Grid.Column="1" x:Name="lblHealthPointsValueLhs" Grid.Row="5"/>
+            <Label Content="Level:"  HorizontalAlignment="Right" Margin="0,0,0,0" x:Name="lblLevelPointsTextLhs" Grid.ColumnSpan="1" Grid.Column="0" Grid.Row="6"/>
+            <Label Content="0" Margin="0,0,0,0" RenderTransformOrigin="0.0,-0.0" Grid.ColumnSpan="1"  Width="60" Grid.Column="1" x:Name="lblLevelPointsValueLhs" Grid.Row="6"/>
+        </Grid>
     </Grid>
 </Window>
