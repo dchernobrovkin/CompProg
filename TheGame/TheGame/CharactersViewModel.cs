@@ -12,8 +12,8 @@ namespace TheGame
         {
             // TODO: replace me
             CharacterList = new ObservableCollection<Character>();
-            CharacterList.Add(new Character { Name = "First", Level = 1, Dexterity = 3, Constitution = 2, Attack = 2, Endurance = 1 } );
-            CharacterList.Add(new Character { Name = "Second", Level = 3, Dexterity = 10, Constitution = 5, Attack = 4, Endurance = 5 });
+           CharacterList.Add(new Character { Name = "First", Dexterity = 3, Constitution = 5, Strength = 2, Endurance = 3, CurHealthPoints = 50} );
+           CharacterList.Add(new Character { Name = "Second", Dexterity = 10, Constitution = 5, Strength = 4, Endurance = 5, CurHealthPoints = 50 });
         }
         public ObservableCollection<Character> CharacterList { get; private set; }
     }
