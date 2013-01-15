@@ -27,20 +27,18 @@ namespace TheGame
         public void OneRound(Character Char1, Character Char2)
         {
             var rand = new Random();
-            var luck = rand.Next(48);
+            var luck1 = rand.Next(48);
+            var luck2 = rand.Next(48);
             
-            if (Char1.Evasion < luck)
+            if (Char1.Evasion < luck1)
             {
                 Char1.CalcHealthAfterDmg(Char2.Attack, Char1.Damage_Reduction);
             }
 
-            if (Char2.Evasion < luck)
+            if (Char2.Evasion < luck2)
             {
                 Char2.CalcHealthAfterDmg(Char1.Attack, Char2.Damage_Reduction);
-            }
-            
-            
-            
+            }       
         }
     }
 }

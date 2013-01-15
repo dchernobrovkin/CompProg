@@ -1,0 +1,30 @@
+﻿<Window x:Class="TheGame.CharCreation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Defence Of the Percents 3" Height="453" Width="651">
+    <Grid Margin="-82,-46,-63,-71">
+        <Button x:Name="IncStr" Content="+" HorizontalAlignment="Left" Margin="330,99,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="StrInc_Click"/>
+        <Button x:Name="DecStr" Content="-" HorizontalAlignment="Left" Margin="292,99,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="StrDec_Click"/>
+        <Button x:Name="IncEnd" Content="+" HorizontalAlignment="Left" Margin="330,137,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="EndInc_Click"/>
+        <Button x:Name="DecEnd" Content="-" HorizontalAlignment="Left" Margin="292,137,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="EndDec_Click"/>
+        <Button x:Name="IncConst" Content="+" HorizontalAlignment="Left" Margin="330,183,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="ConstInc_Click"/>
+        <Button x:Name="DecConst" Content="-" HorizontalAlignment="Left" Margin="292,183,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="ConstDec_Click"/>
+        <Button x:Name="IncDex" Content="+" HorizontalAlignment="Left" Margin="330,221,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="DexInc_Click"/>
+        <Button x:Name="DecDex" Content="-" HorizontalAlignment="Left" Margin="292,221,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="DexDec_Click"/>
+        <Label x:Name="StrVal" Content="1" HorizontalAlignment="Left" Margin="368,97,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="EndVal" Content="1" HorizontalAlignment="Left" Margin="368,137,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="ConstVal" Content="1" HorizontalAlignment="Left" Margin="368,181,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="DexVal" Content="1" HorizontalAlignment="Left" Margin="368,221,0,0" VerticalAlignment="Top"/>
+        <Label Content="Strength" HorizontalAlignment="Left" Margin="403,99,0,0" VerticalAlignment="Top"/>
+        <Label Content="Endurance" HorizontalAlignment="Left" Margin="403,137,0,0" VerticalAlignment="Top"/>
+        <Label Content="Constituion" HorizontalAlignment="Left" Margin="398,181,0,0" VerticalAlignment="Top"/>
+        <Label Content="Dexterity" HorizontalAlignment="Left" Margin="403,221,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="CharNameTextBox" HorizontalAlignment="Left" Height="23" Margin="292,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="92"/>
+        <Label x:Name="CharNameLabel" Content="Name" HorizontalAlignment="Left" Margin="403,59,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Points" Content="Points" HorizontalAlignment="Left" Margin="407,266,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="PointsVal" Content="10" HorizontalAlignment="Left" Margin="368,266,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="CharCreateBut" Content="Create" HorizontalAlignment="Left" Margin="380,300,0,0" VerticalAlignment="Top" Width="75" Click="CharCreate_Click"/>
+        <Button x:Name="BackBut" Content="BackToMenu" HorizontalAlignment="Left" Margin="380,341,0,0" VerticalAlignment="Top" Width="75" Click="BackBut_Click"/>
+        <Button x:Name="SecrBut" Content="SecretButton" HorizontalAlignment="Left" Margin="117,558,0,0" VerticalAlignment="Top" Width="92" Height="30" Click="SecrBut_Click"/>
+    </Grid>
+</Window>
